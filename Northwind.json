@@ -1,0 +1,283 @@
+{
+  "style": {
+    "font-family": "sans-serif",
+    "background-color": "#ffffff",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#ffffff",
+    "border-width": 4,
+    "border-color": "#000000",
+    "radius": 50,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#000000",
+    "caption-font-size": 50,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "pill",
+    "label-color": "#000000",
+    "label-background-color": "#ffffff",
+    "label-border-color": "#000000",
+    "label-border-width": 4,
+    "label-font-size": 40,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "inline",
+    "detail-orientation": "parallel",
+    "arrow-width": 5,
+    "arrow-color": "#000000",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#000000",
+    "type-background-color": "#ffffff",
+    "type-border-color": "#000000",
+    "type-border-width": 0,
+    "type-font-size": 16,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#000000",
+    "property-font-size": 16,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#73d8ff"
+      },
+      "labels": [
+        "Product"
+      ],
+      "properties": {
+        "productID": "",
+        "productName": "",
+        "supplierID": "",
+        "categoryID": "",
+        "quantityPerUnit": "",
+        "unitPrice": "",
+        "unitsInStock": "",
+        "unitsOnOrder": "",
+        "reorderLevel": "",
+        "discontinued": ""
+      }
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": 0.000014273290202232137,
+        "y": 299.9999999999997
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#fb9e00"
+      },
+      "labels": [
+        "Category"
+      ],
+      "properties": {
+        "categoryID": "",
+        "categoryName": "",
+        "description": "",
+        "picture": ""
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 300,
+        "y": 0
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#f44e3b"
+      },
+      "labels": [
+        "Supplier"
+      ],
+      "properties": {
+        "supplierID": "",
+        "companyName": "",
+        "contactName": "",
+        "contactTitle": "",
+        "address": "",
+        "city": "",
+        "region": "",
+        "postalCode": "",
+        "country": "",
+        "phone": "",
+        "fax": "",
+        "homePage": ""
+      }
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": -661.1163431320907,
+        "y": 8.096340134807181e-14
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#fda1ff"
+      },
+      "labels": [
+        "Customer"
+      ],
+      "properties": {
+        "customerID": "",
+        "companyName": "",
+        "contactName": "",
+        "contactTitle": "",
+        "address": "",
+        "city": "",
+        "region": "",
+        "postalCode": "",
+        "country": "",
+        "phone": "",
+        "fax": ""
+      }
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": -300.00000000000006,
+        "y": 3.67394039744206e-14
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#a4dd00"
+      },
+      "labels": [
+        "Order"
+      ],
+      "properties": {
+        "orderID": "",
+        "customerID": "",
+        "employeeID": "",
+        "orderDate": "",
+        "requiredDate": "",
+        "shippedDate": "",
+        "shipVia": "",
+        "freight": "",
+        "shipName": "",
+        "shipAddress": "",
+        "shipCity": "",
+        "shipRegion": "",
+        "shipPostalCode": "",
+        "shipCountry": ""
+      }
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": -285.78650285087565,
+        "y": 299.99999999999955
+      },
+      "caption": "",
+      "style": {
+        "property-position": "outside",
+        "node-color": "#0062b1"
+      },
+      "labels": [
+        "Employee"
+      ],
+      "properties": {
+        "employeeID": "",
+        "lastName": "",
+        "firstName": "",
+        "title": "",
+        "titleOfCourtesy": "",
+        "birthDate": "",
+        "hireDate": "",
+        "address": "",
+        "city": "",
+        "region": "",
+        "postalCode": "",
+        "country": "",
+        "homePhone": "",
+        "extension": "",
+        "photo": "",
+        "notes": "",
+        "reportsTo": "",
+        "phtoPath": ""
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "type": "PART_OF",
+      "style": {},
+      "properties": {},
+      "fromId": "n0",
+      "toId": "n1"
+    },
+    {
+      "id": "n1",
+      "type": "SUPPLIES",
+      "style": {},
+      "properties": {},
+      "fromId": "n2",
+      "toId": "n0"
+    },
+    {
+      "id": "n2",
+      "type": "PURCHASED",
+      "style": {},
+      "properties": {},
+      "fromId": "n3",
+      "toId": "n4"
+    },
+    {
+      "id": "n3",
+      "type": "ORDERS",
+      "style": {},
+      "properties": {
+        "orderID": "",
+        "productID": "",
+        "unitPrice": "",
+        "quantity": "",
+        "discount": ""
+      },
+      "fromId": "n4",
+      "toId": "n0"
+    },
+    {
+      "id": "n4",
+      "type": "REPORTS_TO",
+      "style": {
+        "detail-orientation": "parallel",
+        "attachment-end": "left",
+        "attachment-start": "bottom"
+      },
+      "properties": {},
+      "fromId": "n5",
+      "toId": "n5"
+    },
+    {
+      "id": "n5",
+      "type": "CASHIER_BY",
+      "style": {},
+      "properties": {},
+      "fromId": "n4",
+      "toId": "n5"
+    }
+  ]
+}
