@@ -1,0 +1,18 @@
+1. What is the best selling product? Raclette Courdavault
+
+MATCH (cust:Customer)-[:PURCHASED]->(:Order)-[o:ORDERS]->(p:Product)
+RETURN DISTINCT p.productName as ProductName, SUM(o.quantity) AS TotalProductsPurchased
+ORDER BY TotalProductsPurchased desc
+
+2. Who is selling most of the products? Margaret Peacock
+
+MATCH (cust:Customer)-[:PURCHASED]->(:Order)-[o:ORDERS]->(p:Product),
+(:Order)-[ca:CASHIER_BY]->(e:Employee)
+RETURN DISTINCT e.employeeID as EmployeeID, e.firstName, e.lastName, SUM(o.quantity) AS TotalProductsSold
+ORDER BY TotalProductsSold desc
+
+3. Which employee have the most subordinate? Nancy Davolio
+
+MATCH (e_supervisor:Employee)-[r:REPORTS_TO]->(e_subordinate:Employee)
+RETURN DISTINCT e_supervisor.employeeID as EmployeeID, e_supervisor.firstName, e_supervisor.lastName, COUNT(r) AS TotalSubordinate
+ORDER BY TotalSubordinate desc
