@@ -30,7 +30,7 @@ Relationship
 4. Import Relationships
 5. Convert date string to date
 
-### 3. Exploratory Cypher Query in Neo4j Browser
+### 3. Exploratory Cypher Query in Neo4j Browser - CypherExploratoryScripts.txt
 
 Business questions:
 1. What is the best selling product? Raclette Courdavault
